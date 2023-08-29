@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gluten', cursive;
+}
+
+:root {
+    --roxo1: #6757a3;
+    --roxo2: #b4a2d3;
+    --cinza: #313131;
+    --branco: #f2dade;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--roxo1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white; 
+    text-align: center;
+}
+
+header > h1 {
+    color: var(--branco);
+}
+
+p {
+    color: var(--branco);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+}
+
+.section1, .section2 {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section1 {
+    height: 90vh;
+}
+
+.section2 {
+    height: 100vh;
+}
+
+.box {
+    height: 50%;
+    width: 50%;
+    border: 0.5px solid var(--branco);
+}
+
+.content {
+    background-color: var(--roxo1);
+}
+
+.photo {
+    background-color: var(--roxo2);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.photos {
+    width: 50%;
+    padding: 3px;
+}
+
+.largephotos {
+    width: 100%;
+}

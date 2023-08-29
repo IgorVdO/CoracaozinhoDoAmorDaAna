@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --roxo1: #6757a3;
+    --roxo2: #b4a2d3;
+    --cinza: #313131;
+    --branco: #f2dade;
+}
+
+body {
+    background-color: var(--cinza);
+}
+
+h1 {
+    margin-top: 10px;
+    color: var(--branco);
+    font-family: 'Gluten', cursive;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    width: 350px;
+    background-color: var(--roxo1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+hr {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  
+    margin-top: 10px;  
+}
+
+form {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#submit {
+    background-color: var(--branco);
+    color: var(--roxo1);
+    font-weight: 900;
+    height: 40px;
+    width: 100px;
+    border: 3px solid var(--roxo1);
+    border-radius: 20px; 
+}
+
+button:hover {
+    background-color: rgb(198, 198, 198);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .form-control {
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--roxo2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--branco);
+    outline: none;
+    text-align: center;
+  }
+  
+  .form-label {
+    color: var(--branco);
+    position: absolute;
+    top: 0px; /* Initial position */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.3s ease-out;
+    z-index: -1;
+    font-family: 'Gluten', cursive;
+    font-size: 18px;
+  }
+  
+  .form-control:focus + .form-label,
+  .form-control:valid + .form-label {
+    top: -15px; /* Position when focused */
+    font-size: 15px;
+    color: var(--roxo2);
+  }
+
+  .btn {
+    margin: 35px;
+  }
+
+  #criarConta {
+    text-decoration: none;
+    color: var(--roxo2);
+    font-family: 'Gluten', cursive;
+  }
